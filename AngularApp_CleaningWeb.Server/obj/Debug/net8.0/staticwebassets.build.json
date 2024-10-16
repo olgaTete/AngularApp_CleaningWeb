@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "8dG589KRYIXxZI9bJdh1cm1JPVvZogSDrDLkwnqcChk=",
+  "Source": "AngularApp_CleaningWeb.Server",
+  "BasePath": "_content/AngularApp_CleaningWeb.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\AngularApp_CleaningWeb\\angularapp_cleaningweb.client\\angularapp_cleaningweb.client.esproj",
+      "Version": 2,
+      "Source": "angularapp_cleaningweb.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

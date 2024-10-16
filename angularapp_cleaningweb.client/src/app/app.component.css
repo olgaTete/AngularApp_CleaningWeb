@@ -1,0 +1,14 @@
+:host {
+    max-width: 1280px;
+    padding: 2rem;
+    text-align: center;
+}
+
+div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+form {
+  margin: 0 auto;
+}

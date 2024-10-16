@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AngularApp_CleaningWeb.Server.props" />
+</Project>

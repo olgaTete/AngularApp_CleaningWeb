@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:4200",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\User\\source\\repos\\AngularApp_CleaningWeb\\AngularApp_CleaningWeb.Server\\..\\angularapp_cleaningweb.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

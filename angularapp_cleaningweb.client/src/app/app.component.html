@@ -1,0 +1,36 @@
+<div>
+  <form (submit)="calculateTotalPrice()">
+    <label for="city">Select City:</label>
+    <select id="city" type="value" [(ngModel)]="city" (ngModelChange)="onCityChange($event)" name="city">
+      <option value="">--Select City--</option>
+      <option value="Stockholm">Stockholm</option>
+      <option value="Uppsala">Uppsala</option>
+    </select>
+    <br />
+    <div *ngIf="errorMessage">
+      <p style="color: red;">{{ errorMessage }}</p>
+    </div>
+
+    <div *ngIf="cityPrices">
+      <h3>Prices for {{cityPrices.city}}</h3>
+      <p>Price per square meter: {{cityPrices.pricePerSquareMeter}} SEK</p>
+      <div *ngFor="let service of cityPrices.services">
+        <input type="checkbox" [name]="service.options" [(ngModel)]="selectedServices[service.options]"
+               (ngModelChange)="onServiceChange(service.options, $event)" />
+        <label>{{ service.options }} {{service.price}} SEK</label>
+      </div>
+    </div>
+    <br />
+
+    <label for="totalMetres">Total Metres:</label>
+    <input id="totalMetres" type="number" [(ngModel)]="totalMetres" (ngModelChange)="onTotalMetresChange($event)" name="totalMetres" />
+
+    <br />
+    <br />
+    <button type="submit">Calculate Price</button>
+  </form>
+  
+  <div *ngIf="totalPrice !== null">
+    <p>Total Price: {{ totalPrice }}</p>
+  </div>
+</div>
